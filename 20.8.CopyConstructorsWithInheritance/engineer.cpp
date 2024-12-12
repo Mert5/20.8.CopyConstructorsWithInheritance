@@ -26,7 +26,7 @@ Engineer::Engineer(const Engineer& source)
         std::cout << "Custom copy constructor for Engineer called... " << std::endl;
 }*/
 
-// optimum way to setup constructor if you have inheritance hierarchy
+// optimum way to setup copy constructor if you have inheritance hierarchy
 Engineer::Engineer(const Engineer& source)
     : Person(source), // the compiler is smart, it is going to slice engineer layer and only leaving the person part 
                         // and it is going to use that to initialize the person part of engineer object 
